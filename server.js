@@ -26,7 +26,9 @@ app.post('/api', urlencodedParser, async function (req, res) {
     try {
         if (! req.files) {
             res.send({status: false, message: 'No file uploaded'});
-        } else { // Getting the STL file and moving it to stl folder
+        } else { 
+            
+            // Getting the STL file and moving it to stl folder
             var file = req.files.stlFile;
             var fileName = file.name;
 
