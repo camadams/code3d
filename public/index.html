@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: linen;
+        }
+
+        div {
+            align-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form>
+            <label for="stlFile">Select a STL file to 3D print simulate: </label>
+            <input id="stlFile" type="file">
+        </form>
+
+        <input id="slider" type="range" min="1" value="2" class="slider">
+
+        <button id="play">Play</button>
+
+        <button id="restart">Restart</button>
+
+        <p>Console: <span id="consoleOutput">Input STL file to simulate above.</span></p>
+
+
+    </div>
+
+    <script src="ui.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r118/three.js"></script>
+    <script src="OrbitControls.js"></script>
+
+    <script src="sketch.js"></script>
+
+</body>
+
+</html>

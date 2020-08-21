@@ -1,0 +1,1 @@
+.\slic3rFolder\Slic3r-console.exe --output .\gcodeOut\spiral.gcode .\stl\spiral.stl --load .\slic3rFolder\config.ini
